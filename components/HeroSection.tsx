@@ -85,7 +85,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-cyber font-bold mb-4"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-cyber font-bold mb-4 px-4 leading-tight"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -93,14 +93,14 @@ const HeroSection = () => {
             <span className="text-white">Hi, I'm </span>
             <TypingText
               text="Muhammad Ahdan Rafif Maulana"
-              className="text-primary glow-text"
-              delay={1000}
+              className="text-primary glow-text block"
+              delay={100}
               speed={100}
             />
           </motion.h1>
 
           <motion.h2
-            className="text-xl md:text-2xl lg:text-3xl text-accent font-medium"
+            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-accent font-medium px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 4, duration: 0.8 }}
@@ -111,7 +111,7 @@ const HeroSection = () => {
 
         {/* Description */}
         <motion.p
-          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-gray-300 max-w-md md:max-w-3xl mx-auto mb-12 leading-relaxed px-4"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 4.5, duration: 0.8 }}
@@ -129,7 +129,7 @@ const HeroSection = () => {
           transition={{ delay: 5, duration: 0.8 }}
         >
           <motion.button
-            className="game-button px-8 py-4 rounded-lg font-semibold text-lg"
+            className="game-button w-full sm:w-auto px-8 py-4 rounded-lg font-semibold text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => {

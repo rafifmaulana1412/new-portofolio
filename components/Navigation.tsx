@@ -62,7 +62,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="text-2xl font-cyber font-bold text-primary cursor-pointer"
+            className="text-2xl font-cyber font-bold text-primary cursor-pointer mt-4 sm:mt-0"
             whileHover={{ scale: 1.05 }}
             onClick={() => scrollToSection("home")}
           >

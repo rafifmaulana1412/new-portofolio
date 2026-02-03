@@ -61,7 +61,7 @@ const AboutSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse-slow"></div>
               <div className="absolute inset-2 bg-dark rounded-full overflow-hidden">
                 <img
-                  src="https://via.placeholder.com/300x300/1a1a1a/00f5ff?text=AHDAN"
+                  src="/images/foto-saya.jpeg"
                   alt="Muhammad Ahdan Rafif Maulana"
                   className="w-full h-full object-cover"
                 />
@@ -104,9 +104,9 @@ const AboutSection = () => {
               </h3>
 
               <p className="text-gray-300 leading-relaxed mb-6">
-                Full-Stack Web Developer yang membangun aplikasi web end-to-end,
-                mulai dari antarmuka pengguna hingga sistem backend dan
-                database.
+                A Full-Stack Web Developer who builds end-to-end web
+                applications, from user interfaces to backend systems and
+                databases.
               </p>
 
               <motion.div
@@ -115,17 +115,17 @@ const AboutSection = () => {
                 }`}
               >
                 <p className="mb-4">
-                  Menguasai pengembangan frontend menggunakan React, Tailwind
-                  CSS, dan Bootstrap, serta membangun backend dengan Node.js,
-                  Sequelize, dan PostgreSQL. Dengan pemahaman struktur HTML dan
-                  CSS yang solid serta pengalaman mengelola database melalui
-                  DBeaver.
+                  Proficient in frontend development using React, Tailwind CSS,
+                  and Bootstrap, as well as building backend systems with
+                  Node.js, Sequelize, and PostgreSQL. With a strong
+                  understanding of HTML and CSS structure and experience
+                  managing databases using DBeaver.
                 </p>
 
                 <p>
-                  Dan berfokus pada pembuatan aplikasi web yang fungsional,
-                  terstruktur, dan siap digunakan secara nyata. Terbuka untuk
-                  kesempatan kerja profesional maupun proyek freelance.
+                  Focused on building functional, well-structured, and
+                  production-ready web applications. Open to both professional
+                  job opportunities and freelance projects.
                 </p>
               </motion.div>
 

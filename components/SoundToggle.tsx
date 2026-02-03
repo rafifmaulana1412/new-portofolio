@@ -9,7 +9,7 @@ const SoundToggle = () => {
 
   return (
     <motion.button
-      className="fixed top-6 right-6 z-50 p-3 rounded-full bg-dark-light/80 backdrop-blur-md border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-300"
+      className="fixed top-16 sm:top-6 right-6"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={toggleSound}
