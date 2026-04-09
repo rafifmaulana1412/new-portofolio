@@ -13,22 +13,22 @@ const AboutSection = () => {
     {
       icon: <Code className="w-8 h-8" />,
       title: "Frontend Development",
-      description: "React, Tailwind CSS, Bootstrap",
+      description: "React, Next.js, Tailwind CSS, Bootstrap",
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Backend Development",
-      description: "Node.js, Sequelize, PostgreSQL",
+      description: "Node.js, Next.js API, Prisma, Sequelize",
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Full-Stack Solutions",
-      description: "End-to-end web applications",
+      title: "Database",
+      description: "PostgreSQL, DBeaver",
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Modern Technologies",
-      description: "Latest tools and frameworks",
+      title: "Modern Stack",
+      description: "Full-stack Next.js, REST APIs, Vercel",
     },
   ];
 
@@ -115,11 +115,11 @@ const AboutSection = () => {
                 }`}
               >
                 <p className="mb-4">
-                  Proficient in frontend development using React, Tailwind CSS,
-                  and Bootstrap, as well as building backend systems with
-                  Node.js, Sequelize, and PostgreSQL. With a strong
-                  understanding of HTML and CSS structure and experience
-                  managing databases using DBeaver.
+                  Proficient in frontend development using React, Next.js,
+                  Tailwind CSS, and Bootstrap, as well as building backend
+                  systems with Node.js, Next.js API Routes, Prisma, Sequelize,
+                  and PostgreSQL. With a strong understanding of HTML and CSS
+                  structure and experience managing databases using DBeaver.
                 </p>
 
                 <p>
@@ -129,17 +129,43 @@ const AboutSection = () => {
                 </p>
               </motion.div>
 
-              <motion.button
-                className="game-button px-6 py-3 rounded-lg mt-6 font-semibold"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => {
-                  playSound("click");
-                  setShowMore(!showMore);
-                }}
-              >
-                {showMore ? "Show Less" : "Read More"}
-              </motion.button>
+              <div className="flex flex-wrap gap-3 mt-6">
+                <motion.button
+                  className="game-button px-6 py-3 rounded-lg font-semibold"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    playSound("click");
+                    setShowMore(!showMore);
+                  }}
+                >
+                  {showMore ? "Show Less" : "Read More"}
+                </motion.button>
+
+                <motion.a
+                  href="/cv/M Ahdan Rafif CV.pdf"
+                  download="M Ahdan Rafif CV.pdf"
+                  className="px-6 py-3 rounded-lg font-semibold border-2 border-primary/50 text-primary/80 hover:border-primary hover:text-primary hover:bg-primary/10 transition-all duration-300 flex items-center gap-2"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => playSound("click")}
+                >
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  Download CV
+                </motion.a>
+              </div>
             </div>
           </motion.div>
         </div>

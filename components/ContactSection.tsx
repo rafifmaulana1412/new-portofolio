@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { useSoundContext } from "@/contexts/SoundContext";
 import {
   Mail,
@@ -22,34 +23,50 @@ const ContactSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const { playSound } = useSoundContext();
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
     playSound("click");
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          from_name: formData.name,
+          from_email: formData.email,
+          to_email: "rafifmaulana1412@gmail.com",
+          reply_to: formData.email,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+
       setSubmitted(true);
       playSound("success");
+      setFormData({ name: "", email: "", subject: "", message: "" });
 
-      // Reset form after success
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      }, 3000);
-    }, 2000);
+      setTimeout(() => setSubmitted(false), 4000);
+    } catch (err) {
+      setError(
+        "Gagal mengirim pesan. Silakan coba lagi atau hubungi via WhatsApp.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -312,6 +329,16 @@ const ContactSection = () => {
                     onFocus={() => playSound("hover")}
                   />
                 </motion.div>
+
+                {error && (
+                  <motion.p
+                    className="text-red-400 text-sm text-center bg-red-400/10 border border-red-400/30 rounded-lg px-4 py-3"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                  >
+                    {error}
+                  </motion.p>
+                )}
 
                 <motion.button
                   type="submit"

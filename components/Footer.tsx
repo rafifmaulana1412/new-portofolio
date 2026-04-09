@@ -38,7 +38,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <h3 className="text-2xl font-cyber font-bold text-primary mb-2 glow-text">
-              AHDAN.DEV
+              RF.Dev
             </h3>
             <p className="text-gray-400 text-sm">
               Building the future, one line of code at a time.

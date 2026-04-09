@@ -13,6 +13,7 @@ const SkillsSection = () => {
       title: "Frontend",
       skills: [
         { name: "React", level: 90, color: "#61DAFB" },
+        { name: "Next.js", level: 82, color: "#ffffff" },
         { name: "Tailwind CSS", level: 85, color: "#06B6D4" },
         { name: "Bootstrap", level: 80, color: "#7952B3" },
         { name: "HTML/CSS", level: 95, color: "#E34F26" },
@@ -22,10 +23,13 @@ const SkillsSection = () => {
     {
       title: "Backend",
       skills: [
+        { name: "Next.js API", level: 78, color: "#ffffff" },
         { name: "Node.js", level: 85, color: "#339933" },
+        { name: "Express.js", level: 82, color: "#68A063" },
+        { name: "Prisma", level: 75, color: "#2D3748" },
         { name: "Sequelize", level: 80, color: "#52B0E7" },
         { name: "PostgreSQL", level: 75, color: "#336791" },
-        { name: "Express.js", level: 82, color: "#000000" },
+        { name: "Supabase", level: 78, color: "#3ECF8E" },
         { name: "REST APIs", level: 88, color: "#FF6B6B" },
       ],
     },
@@ -33,9 +37,9 @@ const SkillsSection = () => {
       title: "Tools & Others",
       skills: [
         { name: "Git", level: 85, color: "#F05032" },
-        { name: "DBeaver", level: 78, color: "#382923" },
+        { name: "DBeaver", level: 78, color: "#5C8A8A" },
         { name: "VS Code", level: 90, color: "#007ACC" },
-        { name: "Vercel", level: 80, color: "#000000" },
+        { name: "Vercel", level: 80, color: "#888888" },
       ],
     },
   ];
