@@ -9,7 +9,7 @@ const SoundToggle = () => {
 
   return (
     <motion.button
-      className={`fixed top-6 right-6 z-50 p-3 rounded-full backdrop-blur-md border transition-all duration-300 ${
+      className={`hidden md:flex fixed top-6 right-6 z-50 p-3 rounded-full backdrop-blur-md border transition-all duration-300 ${
         soundEnabled
           ? "bg-primary/20 border-primary text-primary"
           : "bg-dark-light/80 border-gray-600 text-gray-400 hover:border-gray-400"
