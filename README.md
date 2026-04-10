@@ -233,7 +233,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Muhammad Ahdan Rafif Maulana**
 
-- Email: ahdan.rafif@example.com
+- Email: rafifmaulana1412@gmail.com
 - LinkedIn: [linkedin.com/in/ahdan-rafif](https://linkedin.com/in/ahdan-rafif)
 - GitHub: [github.com/ahdan-rafif](https://github.com/ahdan-rafif)
 
