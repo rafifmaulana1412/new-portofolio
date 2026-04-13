@@ -11,8 +11,8 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Freelance Fullstack Web Developer",
-      company: "Freelance",
+      title: "Fullstack Web Developer",
+      company: "Self-Employed",
       location: "Banten, Indonesia",
       period: "April 2026 - Present",
       description:
@@ -41,8 +41,8 @@ const ExperienceSection = () => {
     },
     {
       id: 2,
-      title: "Freelance Full-Stack Developer",
-      company: "Freelance",
+      title: "Full-Stack Developer",
+      company: "Self-Employed",
       location: "Banten, Indonesia",
       period: "2025 - Present",
       description:

@@ -146,8 +146,8 @@ const ContactSection = () => {
               </h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
                 I'm always interested in new opportunities, whether it's a
-                full-time position, freelance project, or just a chat about web
-                development. Feel free to reach out!
+                full-time position or just a chat about web development. Feel
+                free to reach out!
               </p>
 
               {/* Contact Info */}

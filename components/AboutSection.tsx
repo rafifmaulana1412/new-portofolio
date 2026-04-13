@@ -124,8 +124,8 @@ const AboutSection = () => {
 
                 <p>
                   Focused on building functional, well-structured, and
-                  production-ready web applications. Open to both professional
-                  job opportunities and freelance projects.
+                  production-ready web applications. Open to professional job
+                  opportunities.
                 </p>
               </motion.div>
 

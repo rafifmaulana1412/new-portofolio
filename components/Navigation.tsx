@@ -39,7 +39,6 @@ const Navigation = () => {
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
     { id: "experience", label: "Experience" },
-    { id: "services", label: "Services" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -89,7 +88,7 @@ const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               onClick={() => scrollToSection("home")}
             >
-              <span className="glow-text">RF.Dev</span>
+              <span className="glow-text">AHDAN.DEV</span>
             </motion.div>
 
             {/* Desktop Nav */}
